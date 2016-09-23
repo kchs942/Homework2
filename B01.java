@@ -1,6 +1,7 @@
 import java.util.*;
 
 class B01{
+
          int age;
         void input(){
 	   Scanner s=new Scanner(System.in);
@@ -9,16 +10,24 @@ class B01{
            this.age=2014-birth+1;
 	  print();
 	}
+ 
+	       
+	    void print(){
+	           if(age<20) 
+		   System.out.println("미성년자 입니다");
+		   else System.out.println("미성년자가 아닙니다");
 
-	void print(){
-	   if(age<20)
-	   System.out.println("미성년자 입니다");
-	   else System.out.println("미성년자가 아닙니다");
-	
-	}
            public static void main(String[] args){
 	   
 	   new B01().input();  
 	   
 	   }
+
+          public static void main(String[] args){
+		        new B01().input();
+
+}
+
+
+
 }
